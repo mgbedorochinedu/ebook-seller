@@ -1,0 +1,24 @@
+<section class="py-2">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <h1 class="display-3 mt-3 pt-5">
+        Web Development e-book
+      </h1><p class="lead">Web development stripe payment</p>
+      <form action="/charge" method="POST">
+        <script
+          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+
+          data-key="{{stripePublishableKey}}"   {{!-- We apply the key here --}}
+          data-amount="2500"
+          data-name="Web Development Ebook"
+          data-description="Ebook written by Mgbedoro Chinedu"
+          data-image="/img/neydu.png"
+          data-locale="auto">
+        </script>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <img src="/img/book.png" alt="" class="img-fluid">
+    </div>
+  </div>
+</section>
